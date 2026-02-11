@@ -4,12 +4,13 @@ import { BaseButton } from "./BaseButton"
 
 type Props = {
     children: ReactNode
+    onClick: () => void;
 }
 
 export const SecondaryButton = (props: Props) => {
-const { children } = props
+const { children, onClick } = props
   return (
-    <SButton>{children}</SButton>
+    <SButton onClick={onClick}>{children}</SButton>
   )
 }
 

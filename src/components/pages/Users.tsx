@@ -22,6 +22,7 @@ export const Users = () => {
         <SContainer>
             <h2>ユーザー一覧</h2>
             <SearchInput />
+            <br />
             <SUserArea>
                 {users.map((user) => (
                     <UserCard key={user.id} user={user} />

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile>
+  <diagram name="画面遷移図" id="screen-transition">
+    <mxGraphModel dx="1300" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="750" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+
+        <!-- ===== 矢印（最背面） ===== -->
+
+        <!-- Top → Users -->
+        <mxCell id="arrow-top-users" value="Header「Users」リンク" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;fontFamily=Noto Sans JP;fontSize=14;endArrow=classic;startArrow=none;exitX=1;exitY=0.38;exitDx=0;exitDy=0;entryX=0;entryY=0.38;entryDx=0;entryDy=0;" edge="1" parent="1" source="top-frame" target="users-frame">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- Users → Top -->
+        <mxCell id="arrow-users-top" value="Header「Home」リンク" style="edgeStyle=orthogonalEdgeStyle;rounded=0;strokeWidth=2;fontFamily=Noto Sans JP;fontSize=14;endArrow=classic;startArrow=none;exitX=0;exitY=0.62;exitDx=0;exitDy=0;entryX=1;entryY=0.62;entryDx=0;entryDy=0;" edge="1" parent="1" source="users-frame" target="top-frame">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== Top ページ ===== -->
+
+        <mxCell id="top-label" value="Top ページ  ( / )" style="text;fontSize=20;fontStyle=1;fontFamily=Noto Sans JP;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="80" y="70" width="340" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="top-frame" value="" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#333333;strokeWidth=2;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="80" y="120" width="340" height="430" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="top-header" value="Home  |  Users" style="fillColor=#11999e;fontColor=#ffffff;strokeColor=#0d7377;strokeWidth=1;rounded=0;fontFamily=Noto Sans JP;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="90" y="130" width="320" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="top-template" value="Template: DefaultLayout" style="text;fontSize=11;fontFamily=Noto Sans JP;fontColor=#999999;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="200" y="180" width="200" height="25" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="top-content" value="TOPページです" style="fillColor=#f5f5f5;strokeColor=#e0e0e0;strokeWidth=1;rounded=1;fontFamily=Noto Sans JP;fontSize=16;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="100" y="215" width="300" height="240" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="top-footer" value="&amp;copy; 2021 test Inc." style="html=1;fillColor=#11999e;fontColor=#ffffff;strokeColor=#0d7377;strokeWidth=1;rounded=0;fontFamily=Noto Sans JP;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="90" y="500" width="320" height="40" as="geometry"/>
+        </mxCell>
+
+        <!-- ===== Users ページ ===== -->
+
+        <mxCell id="users-label" value="Users ページ  ( /users )" style="text;fontSize=20;fontStyle=1;fontFamily=Noto Sans JP;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="700" y="70" width="340" height="40" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="users-frame" value="" style="rounded=1;whiteSpace=wrap;fillColor=#ffffff;strokeColor=#333333;strokeWidth=2;arcSize=8;" vertex="1" parent="1">
+          <mxGeometry x="700" y="120" width="340" height="430" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="users-header" value="Home  |  Users" style="fillColor=#11999e;fontColor=#ffffff;strokeColor=#0d7377;strokeWidth=1;rounded=0;fontFamily=Noto Sans JP;fontSize=14;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="710" y="130" width="320" height="45" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="users-template" value="Template: HeaderOnly" style="text;fontSize=11;fontFamily=Noto Sans JP;fontColor=#999999;align=right;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="820" y="180" width="200" height="25" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="users-title" value="ユーザー一覧" style="text;fontSize=16;fontStyle=1;fontFamily=Noto Sans JP;align=left;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="720" y="210" width="160" height="30" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="users-search" value="検索条件を入力                 [ 検索 ]" style="fillColor=#f5f5f5;strokeColor=#cccccc;strokeWidth=1;rounded=1;fontFamily=Noto Sans JP;fontSize=12;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="720" y="248" width="300" height="35" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="users-cards" value="UserCard x 10&#xa;&#xa;name / image / email&#xa;phone / company / website" style="fillColor=#e3f2fd;strokeColor=#90caf9;strokeWidth=1;rounded=1;fontFamily=Noto Sans JP;fontSize=13;align=center;verticalAlign=middle;dashed=1;dashPattern=8 4;" vertex="1" parent="1">
+          <mxGeometry x="720" y="295" width="300" height="155" as="geometry"/>
+        </mxCell>
+
+        <mxCell id="users-footer" value="&amp;copy; 2021 test Inc." style="html=1;fillColor=#11999e;fontColor=#ffffff;strokeColor=#0d7377;strokeWidth=1;rounded=0;fontFamily=Noto Sans JP;fontSize=11;align=center;verticalAlign=middle;" vertex="1" parent="1">
+          <mxGeometry x="710" y="500" width="320" height="40" as="geometry"/>
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

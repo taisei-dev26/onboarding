@@ -1,6 +1,5 @@
-import { useContext } from "react";
 import styled from "styled-components";
-import { UserContext } from "../../../providers/UserProvider";
+import { useUserStore } from "../../../stores/userStore";
 
 type Props = {
     image: string;
@@ -9,8 +8,7 @@ type Props = {
 
 const UserIconWithName = (props: Props) => {
     const { image, name } = props;
-    const { userInfo } = useContext(UserContext);
-    const isAdmin = userInfo ? userInfo.isAdmin : false
+    const isAdmin = useUserStore((state) => state.userInfo?.isAdmin ?? false)
 
     return (
     <SContainer>

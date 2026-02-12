@@ -1,12 +1,11 @@
 import styled from "styled-components"
 import { SecondaryButton } from "../atoms/button/SecondaryButton"
 import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
-import { UserContext } from "../../providers/UserProvider";
+import { useUserStore } from "../../stores/userStore";
 
 export const Top = () => {
     const navigate = useNavigate();
-    const { setUserInfo } = useContext(UserContext)
+    const setUserInfo = useUserStore((state) => state.setUserInfo)
 
     const onClickAdmin = () => {
         setUserInfo({ isAdmin: true })
